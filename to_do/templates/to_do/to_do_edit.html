@@ -1,0 +1,19 @@
+{% extends 'simple_todo/main_secondary.html' %} {% load static %}
+<!--Content Block-->
+{%block content%}
+<h3 class="major">To Do Form Input</h3>
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input
+        class="button primary fit"
+        type="submit"
+        value="Update Reminder."
+        href="#reminder-table"
+    />
+</form>
+
+<!--For Content End. -->
+{%endblock content%}
